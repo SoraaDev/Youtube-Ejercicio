@@ -1,0 +1,378 @@
+/* Ajustes generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+}
+
+/* Macros */
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+}
+
+/* menu de navegacion */
+
+#derecha {
+  grid-column: span 94;
+}
+
+.barra_de_navegacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sector_menu {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  gap: 1rem;
+}
+
+.nav_search {
+  padding: 10px;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+}
+
+.user_config {
+  width: 12rem;
+  gap: 3rem;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+}
+
+/* Sugerencias */
+#sugerencias {
+  display: flex;
+  flex-direction: row;
+  border-right-style: none;
+  border-left-style: none;
+}
+
+#todo {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
+  margin-top: 1.5ch;
+  margin-bottom: 1.5ch;
+  margin-left: 1ch;
+  margin-right: 1ch;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+#todo:hover {
+  background-color: #e5e5e5;
+  color: black;
+}
+
+.sugerencias {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
+  margin-top: 1.5ch;
+  margin-bottom: 1.5ch;
+  margin-left: 1ch;
+  margin-right: 1ch;
+  padding: 10px;
+  color: black;
+}
+
+.sugerencias:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Ajuste de tamanos para iconos de sector_menu */
+
+#icon_menu {
+  width: 50px;
+  height: 50px;
+}
+
+#icon_youtube {
+  width: 100px;
+  height: 22px;
+}
+
+#video_preview {
+  width: 250px;
+}
+
+#icono_lupa {
+  width: 30px;
+  height: 30px;
+  padding: 1px;
+}
+
+#boton_lupa {
+  background-color: #f0f0f0;
+  height: 2.6rem;
+  width: 3rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  align-content: center;
+  align-items: center;
+  border-radius: 0px 25px 25px 0px;
+}
+
+#boton_microfono {
+  margin-left: 10px;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: white;
+}
+
+#boton_microfono i {
+  width: 50px;
+  object-fit: cover;
+}
+
+#boton_microfono:hover {
+  background-color: #e1e1e1;
+}
+
+
+#boton_camara {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: white;
+}
+
+#boton_camara i {
+  width: 50px;
+  object-fit: cover;
+}
+
+#boton_camara:hover {
+  background-color: #e1e1e1;
+}
+
+
+#boton_cuenta {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: white;
+}
+
+#boton_cuenta i {
+  width: 50px;
+  object-fit: cover;
+}
+
+#boton_cuenta:hover {
+  background-color: #e1e1e1;
+}
+
+#boton_notificaciones {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: white;
+}
+
+#boton_notificaciones i {
+  width: 50px;
+  object-fit: cover;
+}
+
+#boton_notificaciones:hover {
+  background-color: #e1e1e1;
+}
+
+#buscar_search {
+  width: 25rem;
+  height: 2.5rem;
+  padding-left: 20px;
+  text-indent: 0;
+  border-radius: 25px 0px 0px 25px;
+  border-color: #e1e1e1;
+  border: 1px solid #ccc
+}
+
+#buscar_search:focus {
+  outline: none;
+  border-color: #1c62b9 !important;
+}
+
+#buscar_search::placeholder {
+  font-size: 16px;
+}
+
+/* Caja principal */
+
+.caja_de_videos {
+  width: 100%;
+  height: 100%;
+}
+
+aside {
+  grid-column: span 6;
+  padding: 10px, 2px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.estilo {
+  font-size: 10px;
+}
+
+.lateral {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.lateral button {
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: white;
+  padding: 16px 0 14px;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  outline: 0;
+}
+
+.lateral button:hover {
+  background-color: #f2f2f2;
+  border-radius: 15%;
+}
+
+#menu {
+  margin-top: 10px;
+  font-size: 19px;
+  width: 3px;
+  height: 3px;
+}
+
+#menu:hover {
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+
+.fila_videos {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.videos_yt {
+  border-radius: 9px 9px 9px 9px;
+}
+
+.video-title {
+  font-weight: bold;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.nombre_del_canal {
+  color: black;
+  font-weight: bold;
+}
+
+.vistas {
+  font-size: 12px;
+  color: gray;
+}
+
+.publicacion {
+  font-size: 12px;
+  color: gray;
+}
+
+.caja_info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#icono_user {
+  width: 40px;
+  border-radius: 50%;
+}
+
+#text_info_video {
+  width: 80%;
+}
+
+#alineacion {
+  display: flex;
+  flex-direction: row;
+}
+
+#icono {
+  width: 20%;
+}

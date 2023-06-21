@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link rel="icon" href="resources/icon-yt.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/youtube.css">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <!-- Menu hamburguesa -->
+  <aside id="barra_lateral">
+    <div id="menu" class="lateral">
+      <i class="fa-solid fa-list"></i>
+    </div>
+
+    <!-- Menu lateral -->
+    <div class="lateral">
+      <button class="boton_home">
+        <i class="fa-solid fa-house"></i>
+        <p class="estilo">Inicio</p>
+      </button>
+      <button class="boton_shorts">
+        <i class="fa-solid fa-compass"></i>
+        <p class="estilo">Shorts</p>
+      </button>
+      <button class="boton_suscripciones">
+        <i class="fa-solid fa-circle-user"></i>
+        <p class="estilo">Suscripciones</p>
+      </button>
+      <button class="boton_biblioteca">
+        <i class="fa-solid fa-inbox"></i>
+        <p class="estilo">Mi biblioteca</p>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Barra de navegacion y experiencia de usuario -->
+  <div id="derecha">
+    <nav class="barra_de_navegacion">
+
+      <!-- Imagen Youtube -->
+      <div class="sector_menu fila">
+        <img id="icon_youtube" src="resources/icon-yt.png" alt="Youtube logo">
+      </div>
+
+      <!-- Input con microfono -->
+      <div class="nav_search fila">
+        <input id="buscar_search" type="text" placeholder="Buscar">
+        <button id="boton_lupa">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button id="boton_microfono">
+          <i class="fa-solid fa-microphone"></i>
+        </button>
+      </div>
+
+      <!-- Apartado de configuraciones y cuenta -->
+      <div class="user_config fila">
+        <button id="boton_camara">
+          <i class="fa-solid fa-camera"></i>
+        </button>
+        <button id="boton_notificaciones">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+        <button id="boton_cuenta">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Sugerencias de videos -->
+    <div id="sugerencias">
+      <a href="" id="todo">Todo</a>
+      <a href="" class="sugerencias">Musica</a>
+      <a href="" class="sugerencias">En tiempo real</a>
+      <a href="" class="sugerencias">Videojuegos</a>
+      <a href="" class="sugerencias">Drum & Bass</a>
+      <a href="" class="sugerencias">Lo-Fi</a>
+      <a href="" class="sugerencias">Mixes</a>
+      <a href="" class="sugerencias">League of Legends</a>
+      <a href="" class="sugerencias">Listas de Reproduccion</a>
+    </div>
+
+    <!-- Fila de videos -->
+    <div class="fila_videos">
+      <!-- Video -->
+      <div class="videos">
+        <iframe class="videos_yt" width="400" height="240" src="https://www.youtube.com/embed/_Vm1q2DRNyc"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <div class="caja_info">
+          <div id="icono">
+            <img id="icono_user" src="resources/channels1_profile.jpg" alt="">
+          </div>
+          <div id="text_info_video">
+            <div class="video-title" title="!WILLOW FROM PERILLO! (feat. Kea!)">!WILLOW FROM PERILLO! (feat. Kea!)</div>
+            <p class="nombre_del_canal">TH3 KXD</p>
+            <div id="alineacion">
+              <p class="vistas">4,53 K suscriptores</p>
+              <p class="publicacion"> • hace 4 meses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Video -->
+      <div class="videos">
+        <iframe class="videos_yt" width="400" height="240" src="https://www.youtube.com/embed/D8U_dafzMes"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <div class="caja_info">
+          <div id="icono">
+            <img id="icono_user" src="resources/channels1_profile.jpg" alt="">
+          </div>
+          <div id="text_info_video">
+            <div class="video-title" title="CELINE">CELINE</div>
+            <p class="nombre_del_canal">TH3 KXD</p>
+            <div id="alineacion">
+              <p class="vistas">43 K visualizaciones</p>
+              <p class="publicacion"> • hace 2 meses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Video -->
+      <div class="videos">
+        <iframe class="videos_yt" width="400" height="240" src="https://www.youtube.com/embed/3QAcMt3av7k"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <div class="caja_info">
+          <div id="icono">
+            <img id="icono_user" src="resources/channels2_profile.jpg" alt="">
+          </div>
+          <div id="text_info_video">
+            <div class="video-title" title="TWO STEP!">TWO STEP!</div>
+            <p class="nombre_del_canal">CTO Chop - Tema</p>
+            <div id="alineacion">
+              <p class="vistas">159.454 visualizaciones</p>
+              <p class="publicacion"> • 19 ene 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin fila de videos-->
+    <!-- Fila de videos -->
+    <div class="fila_videos">
+      <!-- Video -->
+      <div class="videos">
+        <iframe class="videos_yt" width="400" height="240" src="https://www.youtube.com/embed/uKTkaxBfOJw"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <div class="caja_info">
+          <div id="icono">
+            <img id="icono_user" src="resources/channels3_profile.jpg" alt="">
+          </div>
+          <div id="text_info_video">
+            <div class="video-title" title="DIPPIN. (feat. GXNER!)">DIPPIN. (feat. GXNER!)</div>
+            <p class="nombre_del_canal">IZAY3 - Tema</p>
+            <div id="alineacion">
+              <p class="vistas">18 K visualizaciones</p>
+              <p class="publicacion"> • hace 1 meses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Video -->
+      <div class="videos">
+        <iframe class="videos_yt" width="400" height="240" src="https://www.youtube.com/embed/-jw71Q44_Dg"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <div class="caja_info">
+          <div id="icono">
+            <img id="icono_user" src="resources/channels4_profile.jpg" alt="">
+          </div>
+          <div id="text_info_video">
+            <div class="video-title" title="#TokyoGxng">#TokyoGxng</div>
+            <p class="nombre_del_canal">KR:ONE</p>
+            <div id="alineacion">
+              <p class="vistas">37 K visualizaciones</p>
+              <p class="publicacion"> • hace 3 semanas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Video -->
+      <div class="videos">
+        <iframe class="videos_yt" width="400" height="240" src="https://www.youtube.com/embed/2rVsaxv-fcM"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <div class="caja_info">
+          <div id="icono">
+            <img id="icono_user" src="resources/channels5_profile.jpg" alt="">
+          </div>
+          <div id="text_info_video">
+            <div class="video-title" title="cant stop.">cant stop.</div>
+            <p class="nombre_del_canal">okleaff - Tema</p>
+            <div id="alineacion">
+              <p class="vistas">142 K visualizaciones</p>
+              <p class="publicacion"> • hace 4 semanas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin fila de videos-->
+</body>
+
+</html>
